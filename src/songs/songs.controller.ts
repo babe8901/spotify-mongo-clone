@@ -26,8 +26,8 @@ export class SongsController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.songsService.findbyId(id);
+  findById(@Param('id') id: string) {
+    return this.songsService.findById(id);
   }
 
   @Patch(':id')

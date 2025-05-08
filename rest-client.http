@@ -24,3 +24,15 @@ Content-Type: application/json
 
 ### Delete song by id
 DELETE http://localhost:3000/songs/681d02ff68cf75ffaa45124e
+
+### Create album
+POST http://localhost:3000/albums
+Content-Type: application/json
+
+{
+  "title": "Dance again",
+  "songs": ["681d059ac5229880106f4786", "681d0629c5229880106f4789"]
+}
+
+### Get all albums
+GET http://localhost:3000/albums

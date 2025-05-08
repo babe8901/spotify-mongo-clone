@@ -19,7 +19,7 @@ export class SongsService {
     return this.songModel.find();
   }
 
-  findbyId(id: string) {
+  findById(id: string) {
     return this.songModel.findById(id);
   }
 
