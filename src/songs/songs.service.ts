@@ -15,19 +15,19 @@ export class SongsService {
     return await this.songModel.create(createSongDto);
   }
 
-  async findAll() {
-    return await this.songModel.find().exec();
+  findAll() {
+    return this.songModel.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} song`;
+  findbyId(id: string) {
+    return this.songModel.findById(id);
   }
 
-  update(id: number, updateSongDto: UpdateSongDto) {
-    return `This action updates a #${id} song`;
+  update(id: string, updateSongDto: UpdateSongDto) {
+    return this.songModel.updateOne({ _id: id }, updateSongDto);
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} song`;
+  delete(id: string) {
+    return this.songModel.deleteOne({ _id: id });
   }
 }

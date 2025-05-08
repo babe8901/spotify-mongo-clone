@@ -2,12 +2,25 @@ POST http://localhost:3000/songs
 Content-Type: application/json
 
 {
-  "title": "Lasting Lover",
+  "title": "Love me",
   "releasedDate" : "2023-05-11",
-  "duration" :"02:33",
-  "lyrics": "I don't know why I can't quite get you out my sight You're always just behind"
+  "duration" :"02:33"
 }
 
 
 ### Get all songs
 GET http://localhost:3000/songs
+
+### Get song by id
+GET http://localhost:3000/songs/681d0629c5229880106f4789
+
+### Update song by id
+PATCH http://localhost:3000/songs/681d0629c5229880106f4789
+Content-Type: application/json
+
+{
+  "title": "Love me again"
+}
+
+### Delete song by id
+DELETE http://localhost:3000/songs/681d02ff68cf75ffaa45124e
