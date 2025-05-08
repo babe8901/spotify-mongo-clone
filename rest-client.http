@@ -1,0 +1,13 @@
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+  "title": "Lasting Lover",
+  "releasedDate" : "2023-05-11",
+  "duration" :"02:33",
+  "lyrics": "I don't know why I can't quite get you out my sight You're always just behind"
+}
+
+
+### Get all songs
+GET http://localhost:3000/songs

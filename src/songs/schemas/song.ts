@@ -14,6 +14,7 @@ export class Song {
   @Prop({ required: true })
   duration: string;
 
+  @Prop()
   lyrics: string;
 }
 
